@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Lista Życzeń</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#2196F3">
+</head>
+<body>
+    <div class="container">
+        <h1>Moja Lista Życzeń</h1>
+
+        <div>
+            <input type="text" id="productName" placeholder="Nazwa produktu">
+            <input type="number" id="productPrice" placeholder="Cena (np. 99.99)" step="0.01">
+            <button id="addProductBtn">Dodaj do listy</button>
+        </div>
+
+        <ul id="productList">
+
+        </ul>
+
+        <div class="total-section">
+            <p>Całkowity koszt: <span id="totalSum">0.00</span> PLN</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
