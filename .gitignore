@@ -1,0 +1,25 @@
+*.log
+*.tmp
+*.bak
+*~
+~*
+*.swp
+*.swo
+.vscode/
+/dist/
+/build/
+/out/
+/public/build/
+/node_modules/
+/coverage/
+.nyc_output/
+.cache/
+.eslintcache
+.prettierignore
+.prettierrc.json # Jeśli chcesz, aby każdy deweloper miał własne ustawienia Prettier
+.env
+.env.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.map 
