@@ -32,14 +32,14 @@ function addProduct() {
     }
 
     const newProduct = {
-        id: Date.now(), 
+        id: Date.now(),
         name: name,
         price: price,
     };
 
     products.push(newProduct);
     saveProductsToLocalStorage();
-    renderProductList();
+    renderProductsList();
     calculateTotalSum();
 
     productNameInput.value = '';
@@ -50,11 +50,11 @@ function addProduct() {
 function deleteProduct(id) {
     products = products.filter(product => product.id !== id);
     saveProductsToLocalStorage();
-    renderProductList();
+    renderProductsList();
     calculateTotalSum();
 }
 
-function renderProductList() {
+function renderProductsList() {
     productList.innerHTML = '';
 
     if (products.length === 0) {
@@ -110,5 +110,6 @@ productPriceInput.addEventListener('keypress', (event) => {
 
 document.addEventListener('DOMContentLoaded', () => {
     loadProductsFromLocalStorage();
+    renderProductsList();
     calculateTotalSum();
 });
