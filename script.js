@@ -54,37 +54,3 @@ function deleteProduct(id) {
     calculateTotalSum();
 }
 
-function renderProductList() {
-    productList.innerHTML = '';
-
-    if (products.length === 0) {
-        const emptyMessage = document.createElement('li');
-        emptyMessage.textContent = 'Twoja lista jest pusta. Dodaj pierwszy Element';
-        emptyMessage.style.textAlign = 'center';
-        emptyMessage.style.color = '#777';
-        emptyMessage.style.padding = '20px';
-        productList.appendChild(emptyMessage);
-        return;
-    }
-
-    products.forEach(product => {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `
-        <div class="product-info">
-            <strong>${product.name}</strong>
-            <span>${product.price.toFixed(2)}</span>
-        </div>
-        <div class="item-action">
-            <button class="delete-btn" data-id="${product.id}">Usuń</button>
-        </div>
-        `;
-        productList.appendChild(listItem);
-    });
-
-    document.querySelectorAll('.delete-btn').forEach(button => {
-        button.addEventListener('click', (event) => {
-            const idToDelete = parseInt(event.target.dataset.id);
-            deleteProduct(idToDelete);
-        });
-    });
-}
