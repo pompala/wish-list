@@ -32,12 +32,12 @@ function addProduct() {
     }
 
     const newProduct = {
-        id: Date.now(),
+        id: Date.now(), 
         name: name,
         price: price,
     };
 
-    products.push(newProduct)
+    products.push(newProduct);
     saveProductsToLocalStorage();
     renderProductList();
     calculateTotalSum();
