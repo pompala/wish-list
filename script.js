@@ -50,7 +50,7 @@ function addProduct() {
 function deleteProduct(id) {
     products = products.filter(product => product.id !== id);
     saveProductsToLocalStorage();
-    renderProductsfList();
+    renderProductsList();
     calculateTotalSum();
 }
 
