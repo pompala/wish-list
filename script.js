@@ -32,7 +32,7 @@ function addProduct() {
     }
 
     const newProduct = {
-        id: Date.now(), 
+        id: Date.now(),
         name: name,
         price: price,
     };
@@ -110,5 +110,6 @@ productPriceInput.addEventListener('keypress', (event) => {
 
 document.addEventListener('DOMContentLoaded', () => {
     loadProductsFromLocalStorage();
+    renderProductList();
     calculateTotalSum();
 });
