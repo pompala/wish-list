@@ -32,12 +32,12 @@ function addProduct() {
     }
 
     const newProduct = {
-        id: Date.now(),
+        id: Date.now(), 
         name: name,
         price: price,
     };
 
-    products.push(newProduct)
+    products.push(newProduct);
     saveProductsToLocalStorage();
     renderProductList();
     calculateTotalSum();
@@ -88,3 +88,27 @@ function renderProductList() {
         });
     });
 }
+
+function calculateTotalSum() {
+    const total = products.reduce((sum, product) => sum + product.price, 0);
+    totalSumSpan.textContent = total.toFixed(2);
+}
+
+addProductBtn.addEventListener('click', addProduct);
+
+productNameInput.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+        addProduct();
+    }
+});
+
+productPriceInput.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+        addProduct();
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    loadProductsFromLocalStorage();
+    calculateTotalSum();
+});
