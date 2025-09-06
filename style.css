@@ -41,6 +41,14 @@ h1 {
     min-width: 120px;
 }
 
+#addProductBtn,#productName,#productPrice {
+    border-radius: 30px;
+}
+
+#productName,#productPrice {
+    padding-left:20px;
+}
+
 .input-section button {
     padding: 12px 20px;
     background-color: #28a745;
@@ -130,9 +138,9 @@ h1 {
     color: #007bff;
 }
 
-.total-section span {
+/* .total-section span {
     color: #007bff;
-}
+} */
 
 @media (max-width: 600px) {
     body {
@@ -146,5 +154,26 @@ h1 {
     }
     .input-section button {
         width: 100%;
+    }
+    .total-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+        padding-top: 10px;
+    }
+
+    .total-section p {
+        margin-bottom: 0;
+        font-size: 18px;
+        color: #555;
+    }
+
+    .total-section #totalSum {
+        font-size: 24px;
+        font-weight: bold;
+        color: #007bff;
+        display: block;
     }
 }
