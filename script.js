@@ -91,7 +91,7 @@ function renderProductsList() {
 
 function calculateTotalSum() {
     const total = products.reduce((sum, product) => sum + product.price, 0);
-    totalSumSpan.textContent = total.toFixed(2);
+    totalSumSpan.textContent = total.toFixed(2) + ' PLN';
 }
 
 addProductBtn.addEventListener('click', addProduct);
