@@ -75,7 +75,7 @@ function renderProductsList() {
             <span>${product.price.toFixed(2)}</span>
         </div>
         <div class="item-action">
-            <button class="delete-btn" data-id="${product.id}">Usuń</button>
+            <button class="delete-btn" data-id="${product.id}">X</button>
         </div>
         `;
         productList.appendChild(listItem);
