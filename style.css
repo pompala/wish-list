@@ -7,7 +7,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    height: 100%;
 }
 
 .container {
@@ -35,7 +36,8 @@ h1 {
 .input-section input[type="text"],
 .input-section input[type="numer"] {
     flex: 1;
-    padding: 12px;
+    /* padding: 12px; */
+    height: 50px;
     border-radius: 5px;
     font-size: 16px;
     min-width: 120px;
@@ -127,7 +129,7 @@ h1 {
 
 .total-section {
     text-align: right;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding-top: 15px;
     border-top: 2px solid #ddd;
 }
@@ -148,9 +150,11 @@ h1 {
     }
     .container {
         padding: 15px;
+        box-shadow: none;
     }
     .input-section input {
         width: 100%;
+        height: 50px;
     }
     .input-section button {
         width: 100%;
