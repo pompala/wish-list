@@ -21,8 +21,13 @@ function saveProductsToLocalStorage() {
 function addProduct() {
     const name = productNameInput.value.trim();
     const price = parseFloat(productPriceInput.value.replace(',', '.'));
+    
+    if (name === '' && (isNaN(price) || price <= 0)) {
+        alert('Proszę podać nazwę produktu i prawidłową cenę!')
+        return;
+    }
 
-    if (name == '') {
+    if (name === '') {
         alert('Proszę podać nazwę produktu!');
         return;
     }
@@ -81,18 +86,25 @@ function renderProductsList() {
         productList.appendChild(listItem);
     });
 
-    document.querySelectorAll('.delete-btn').forEach(button => {
-        button.addEventListener('click', (event) => {
-            const idToDelete = parseInt(event.target.dataset.id);
-            deleteProduct(idToDelete);
-        });
-    });
+    // document.querySelectorAll('.delete-btn').forEach(button => {
+    //     button.addEventListener('click', (event) => {
+    //         const idToDelete = parseInt(event.target.dataset.id);
+    //         deleteProduct(idToDelete);
+    //     });
+    // });
 }
 
 function calculateTotalSum() {
     const total = products.reduce((sum, product) => sum + product.price, 0);
     totalSumSpan.textContent = total.toFixed(2) + ' PLN';
 }
+
+productList.addEventListener('click', (event) => {
+    if (event.target.classList.contains('delete-btn')) {
+        const idToDelete = parseInt(event.target.dataset.id);
+        deleteProduct(idToDelete);
+    }
+});
 
 addProductBtn.addEventListener('click', addProduct);
 
