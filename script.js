@@ -85,13 +85,6 @@ function renderProductsList() {
         `;
         productList.appendChild(listItem);
     });
-
-    // document.querySelectorAll('.delete-btn').forEach(button => {
-    //     button.addEventListener('click', (event) => {
-    //         const idToDelete = parseInt(event.target.dataset.id);
-    //         deleteProduct(idToDelete);
-    //     });
-    // });
 }
 
 function calculateTotalSum() {
@@ -124,4 +117,30 @@ document.addEventListener('DOMContentLoaded', () => {
     loadProductsFromLocalStorage();
     renderProductsList();
     calculateTotalSum();
+});
+
+// theme switch
+
+const themeToggle = document.getElementById('checkbox');
+const sunIcon = document.querySelector('.sun-icon');
+const moonIcon = document.querySelector('.moon-icon');
+
+function toggleTheme() {
+    document.body.classList.toggle('dark-mode');
+
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme','dark');
+    } else {
+        localStorage.setItem('theme','light');
+    }
+}
+
+themeToggle.addEventListener('change',toggleTheme);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        themeToggle.checked = true;
+    }
 });
