@@ -21,12 +21,12 @@ body {
 /* ciemny motyw */
 
 body.dark-mode {
-    background-color:#121212;
+    background-color:#000000;
 }
 
 body.dark-mode .container {
-    background-color: #1e1e1e;
-    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+    background-color: #000000;
+    box-shadow: none;
 }
 
 body.dark-mode .input-section input[type="text"]
@@ -115,8 +115,8 @@ body.dark-mode .moon-icon {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #362f2f;
-    transition: .4s;
+    /* background-color: #362f2f; */
+    border: 1px solid gray;
     display: flex;
     align-items: center;
     justify-content: space-between;
