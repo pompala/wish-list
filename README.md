@@ -34,7 +34,7 @@ Projekt został zbudowany przy użyciu podstawowych technologii front-endowych:
 
 Aplikacja jest wdrożona i dostępna online dzięki platformie Netlify. Możesz ją przetestować i zainstalować jako PWA, klikając w poniższy link:
 
-**[Przejdź do aplikacji -> https://twoja-nazwa-aplikacji.netlify.app/](https://twoja-nazwa-aplikacji.netlify.app/)**
+**[Przejdź do aplikacji -> https://wishymylist.netlify.app/](https://wishymylist.netlify.app/)**
 
 ## 📄 Licencja
 
