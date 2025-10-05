@@ -8,8 +8,11 @@ Aplikacja jest ciągle rozwijana i udoskonalana.
 
 ## Podgląd Aplikacji
 
-<img width="641" height="688" alt="obraz" src="https://github.com/user-attachments/assets/7fc0303d-6bbc-4a70-90cf-d8490f9fae57" />
-<img width="416" height="808" alt="obraz" src="https://github.com/user-attachments/assets/4f84d8ea-33f4-478c-a51f-d4bb76e4e8e1" />
+## Podgląd Aplikacji
+
+| Wersja Desktop | Wersja Mobilna |
+| :---: | :---: |
+| <img width="550" alt="Podgląd aplikacji na komputerze" src="https://github.com/user-attachments/assets/7fc0303d-6bbc-4a70-90cf-d8490f9fae57"> | <img width="300" alt="Podgląd aplikacji na telefonie" src="https://github.com/user-attachments/assets/4f84d8ea-33f4-478c-a51f-d4bb76e4e8e1"> |
 
 
 ## ✨ Funkcjonalności
