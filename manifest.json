@@ -1,0 +1,21 @@
+{
+  "name": "Moja Lista Życzeń",
+  "short_name": "Wishy",
+  "description": "Aplikacja do zarządzania listą życzeń i zakupów.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2196F3",
+  "icons": [
+    {
+      "src": "logo/Wish_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo/Wish_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
