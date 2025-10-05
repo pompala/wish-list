@@ -18,7 +18,7 @@ body {
     min-height: 100vh;
 }
 
-/* ciemny motyw */
+/* dark-mode */
 
 body.dark-mode {
     background-color:#000000;
@@ -93,7 +93,7 @@ body.dark-mode .moon-icon {
     align-items: center;
     gap: 10px;
     z-index: 10;
-}
+} 
 
 .theme-switch {
     position: relative;
@@ -115,7 +115,6 @@ body.dark-mode .moon-icon {
     left: 0;
     right: 0;
     bottom: 0;
-    /* background-color: #362f2f; */
     border: 1px solid gray;
     display: flex;
     align-items: center;
