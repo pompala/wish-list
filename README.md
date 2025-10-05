@@ -6,7 +6,6 @@ Prosta i intuicyjna aplikacja webowa do tworzenia i zarządzania listą życzeń
 
 Aplikacja jest ciągle rozwijana i udoskonalana.
 
-## Podgląd Aplikacji
 
 ## Podgląd Aplikacji
 
